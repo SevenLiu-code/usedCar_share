@@ -37,8 +37,11 @@ div.car_show_price>i.l_price { margin-left: 1.5rem; padding: 0 0.0625rem;
 /*基础信息模块*/
 div.car_d_info_kind { padding: 0.4688rem; margin-top: 0.2344rem;
 	 background-color: #fff; }
+ul._info_base_list>li>._info_text { font-size: 14px; color: #1B1B1B; }
 .caption { padding-left: 0.1562rem; border-left: 0.0625rem solid #f4320b;
   line-height: 14px; font-size: 14px; color: #495056; }
+[data-dpr="2"] ul._info_base_list>li>._info_text { font-size: 28px; }
+[data-dpr="3"] ul._info_base_list>li>._info_text { font-size: 28px; }
 [data-dpr="2"] .caption { font-size: 28px; line-height: 28px; }
 [data-dpr="3"] .caption { font-size: 42px; line-height: 42px; }
 

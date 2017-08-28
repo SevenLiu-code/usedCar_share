@@ -10,14 +10,15 @@ $(function(){
   		             '<span class="' + totalClassName + '"></span>';
   	  		}
     });
-    //配置参数进入
-  	$('div._info_base_more').tap(function(){
+    $('div._info_base_more').tap(function(){
   		$('.hidden_part').hide();
+  		$('div.car_parameter').scrollTop();
   		$('div.car_parameter').show();
-  	})
+  	});
   	//配置参数退出
-  	$('div.car_parameter_head>a').tap(function(){
+  	$('div.car_parameter_head>a').on('touchstart', function(e){
   		$(this).parents('div.car_parameter').hide();
   		$('.hidden_part').show();
-  	})
+  		if(e.type == "touchstart") e.preventDefault();//阻止默认事件，防止点透
+  	});
 })
