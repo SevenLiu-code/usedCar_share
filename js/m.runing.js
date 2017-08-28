@@ -1,7 +1,6 @@
 $(function(){
     var usedCar_details_slide = new Swiper( '.car-details-swiper', {
         loop: true,
-        autoplay: 5000,
         pagination : '.swiper-pagination',
         paginationType : 'fraction',
         paginationFractionRender: function (swiper, currentClassName, totalClassName) {
