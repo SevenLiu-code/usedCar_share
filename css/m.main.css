@@ -90,7 +90,7 @@ section.car_detail_btn>div._l_price_btn { background-color: #2ab40f; }
 section.car_detail_btn>div._sell_car_btn{ background-color: #e2ae30; }
 section.car_detail_btn>div._sell_car_btn>a{ color: #fff; }
 /*配置参数*/
-div.car_parameter { display: none; margin-bottom: 1.5rem; }
+div.car_parameter { display: none; margin-bottom: 4rem; }
 div.car_parameter_kind { padding: 0.34rem 0; margin-bottom: 0.3125rem;
 	 background-color: #fff; }
 div.car_parameter_kind .caption { margin: 0 0.4688rem 0.3125rem 0.4688rem;  }
