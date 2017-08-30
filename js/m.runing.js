@@ -20,4 +20,7 @@ $(function(){
   		$('.hidden_part').show();
   		if(e.type == "touchstart") e.preventDefault();//阻止默认事件，防止点透
   	});
+    $('div.details_push_btn>button').tap(function(){
+  		$('section.details_push_tip').show();
+  	})
 })
