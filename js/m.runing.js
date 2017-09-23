@@ -23,4 +23,19 @@ $(function(){
     $('div.details_push_btn>button').tap(function(){
   		$('section.details_push_tip').show();
   	})
+
+    //推荐app切换
+    $('.details_push_change span.close').tap(function(){
+  				$(this).addClass('hidden');
+  				$('section.car_detail_info').animate({'padding-bottom': '0rem'});
+  				$(this).parents('.details_push').animate({'right': '-100%'}, 300, function(){
+  					$(this).parent().find('span.open').removeClass('hidden').addClass('details_push_change_fixed');
+  				});
+  	});
+  	$('.details_push_change span.open').tap(function(){
+  				$(this).addClass('hidden');
+  				$(this).parents('.details_push').css({'right': 0});
+  				$(this).parent().find('span.close').removeClass('hidden details_push_change_fixed');
+  				$('section.car_detail_info').css({'padding-bottom': '4rem'});
+  	})
 })
